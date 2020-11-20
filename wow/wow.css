@@ -3,9 +3,13 @@
 * { box-sizing: border-box; }
 body{
      background-color:white;
-     color:black;
+	 color:dodgerblue;
+	 text-align: center;
 }
-
+.nav-item{
+    font-size:1.5em;
+    font-weight: bold;
+}
 nav{
 	background-color:white;
 	text-align: center;
@@ -13,8 +17,8 @@ nav{
 }
 
 .jumbotron {
-	 background-color:#FEF7E1;
-     color: black;
+	 background-color:dodgerblue;
+     color: white;
      margin:2em;
 }
 
@@ -30,13 +34,13 @@ nav{
      text-align:center;
      padding:1%;
      margin-bottom:2%;
-     max-height:110px;
+     max-height:100px;
      background-color:white;
 	font-family:'Maven Pro', sans-serif;
 }
 
 .home-nav img{
-     height:125px;
+     max-height:100px;
      width:auto;
 }
 
@@ -46,13 +50,8 @@ nav{
 }
 
 #navigation a, .home-nav a {
-    color: dodgerblue;
-	font-family: sans-serif;
-	font-style: bold;
-}
-
-a:hover{
-	background-color: black;
+     color: dodgerblue;
+	font-family:'Maven Pro', sans-serif;
 }
 
 footer {
@@ -69,7 +68,7 @@ td{
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 182%;
+  width: 174%;
 }
 .about-content {
 	font-size: 3em;
@@ -84,7 +83,7 @@ td{
 }
 
 .search-container button {
-  padding: 6px 10px;
+  padding: 6px 8px;
   margin-top: 8px;
   margin-right: 16px;
   background: dodgerblue;
@@ -95,6 +94,7 @@ td{
 
 .search-container button:hover {
   background: purple;
+  color:white;
 }
 /*contact css*/
 #contact-content {
@@ -106,18 +106,21 @@ td{
 #contact-table td{
      text-align:left;
      vertical-align:middle;
-    font-family: 'Roboto';
+     font-family: 'Roboto';
+    
 }
-#contact-heading{
-    font-size: 1.5em;
-     color:#EDD8BB;
-     font-family: 'Poiret+One';
+.form-group{
+	color:steelblue;
+	font-size: 1.25em;
+}
+.contact-text{
+    color:steelblue;
 }
 td a{
     color:steelblue;
 }
 td a:hover{
-    color:#EDD8BB;
+    color:purple;
     text-decoration: none;
 }
 
@@ -169,7 +172,7 @@ table tr td{
 }
 
 /* mobile responsve css */
-/* @media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
 	body {
         width:auto;
 		padding: 0;
@@ -249,5 +252,5 @@ table tr td{
 	footer {
 		margin: 0;
 	}
-} */
+}
 		
