@@ -3,7 +3,8 @@
 * { box-sizing: border-box; }
 body{
      background-color:white;
-     color:black;
+	 color:dodgerblue;
+	 text-align: center;
 }
 .nav-item{
     font-size:1.5em;
@@ -109,7 +110,8 @@ td{
     
 }
 .form-group{
-    color:steelblue;
+	color:steelblue;
+	font-size: 1.25em;
 }
 .contact-text{
     color:steelblue;
