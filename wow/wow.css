@@ -1,4 +1,4 @@
-﻿@charset "utf-8";
+@charset "utf-8";
 /* CSS Document */
 * { box-sizing: border-box; }
 body{
@@ -58,6 +58,7 @@ footer {
      text-align: center;
      font-style: italic;
      color: dodgerblue;
+     padding: 2em;
 }
 
 /*about css*/
@@ -96,6 +97,21 @@ td{
   background: purple;
   color:white;
 }
+/* sign in css */
+#signIn {
+    text-align: left;
+    padding: 20px 500px 0px;
+    color:steelblue;
+}
+/* register css */
+#registerForm {
+    text-align: left;
+    padding: 0px 500px 0px;
+    color:steelblue;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1em;
+}
 /*contact css*/
 #contact-content {
      width: 80%;
@@ -123,7 +139,63 @@ td a:hover{
     color:purple;
     text-decoration: none;
 }
+/*item list css */
+#washDry{
+     color:steelblue;
+     font-family: 'Poiret+One';
+     font-size: 1.5em;
+}
+#washDetail{
+    width:50%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid steelblue;
+}
+#washDetail tr td{
+     color:steelblue;
+     font-family: 'Poiret+One';
+     font-size: 1.5em;
+}
 
+#dryList{
+    width:50%;
+    margin-left:auto;
+    margin-right:auto;
+    border: 2px solid steelblue;
+    padding: 2em;
+    color:steelblue;
+    font-family: 'Poiret+One';
+    font-size: 1.5em;
+    
+}
+input[type='checkbox']{
+    width:30px;
+    height:30px;
+    border-radius:px;
+    border:2px;
+}
+/*confirmation scc */
+#confirm{
+    text-align: left;
+    padding: 70px 500px 30px;
+    color:steelblue;
+}
+#orderDetail tr th{
+    text-align: left;
+    padding:1em;
+
+}
+#orderDetail tr td{
+    text-align: left;
+    padding: 10px 20px;
+}
+#confirmForm{
+    border:2px solid steelblue;
+    width:50%;
+    margin-left: auto;
+    margin-right:auto;
+    color:steelblue;
+}
 /*location css*/
 .locations-div table {
      width: 80%;
@@ -137,18 +209,6 @@ td a:hover{
 }
 
 
-table tr th{
-     text-align:center;
-     padding-top:3em;
-     color:#EDD8BB;
-     font-family: 'Poiret+One';
-     font-size: 2em;
-}
-
-table tr td{
-     text-align:center;
-     font-family: 'Roboto';
-}
 
 .locations-div{
      width:40%;
@@ -170,6 +230,7 @@ table tr td{
      margin: 1em;
      text-align: center;
 }
+
 
 /* mobile responsve css */
 @media only screen and (max-width: 768px) {
