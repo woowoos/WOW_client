@@ -1,0 +1,150 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>>WashonWheelsnyc: itemList</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="wow.css">
+	<link href="https://fonts.googleapis.com/css?family=Maven+Pro|Poiret+One|Raleway|Roboto" rel="stylesheet">
+	<link rel="shortcut icon" type="image/png" href="images/logo.png"/>
+</head>
+
+<body>
+     <div class="home-nav">
+          <a class="navbar-brand" href="index.html">
+               <img src="images/logo.png" alt="logo">
+          </a>
+     </div>
+        
+     <div id="navigation">
+          <ul class="nav justify-content-center">
+               <li class="nav-item">
+                    <a class="nav-link active" href="index.html">Home</a>
+               </li>
+               <li class="nav-item">
+                    <a class="nav-link" href="locations.html">About Us</a>
+               </li>
+               <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+               </li>
+         </ul>
+     </div>
+    <div class="jumbotron">
+          <h3>Please select the service and the items accordingly.</h3>
+    </div>
+    <div id="washDry">
+        <input type="checkbox" id="washFold" name="washFold" value="1">
+        <label for="checkbox"> WASH &#38; FOLD </label>&nbsp; &nbsp; 
+        <input type="checkbox" id="dryCleaning" name="dryCleaning" value="dryCleaning">
+        <label for="checkbox"> DRY CLEANING </label><br><br>
+    </div>
+    <form id="itemList" method="post" action="index.html">
+        <table id="washDetail">
+            <tr>
+                <td id="firstcol">Wash &#38; Fold ($8.50/lb)</td> 
+                <td><input type="number" id="wash1" min="0" max="10" value="0" disabled> lb </td>
+            </tr>
+            <tr>
+                <td id="secondcol">Separate Wash</td> 
+                <td><input type="checkbox" id="wash2" value="0" disabled></td>
+            </tr>
+
+        </table><br>
+        <table id="dryList">
+            <tr>
+                <th>Dry Cleaning Item</th>
+                <th>Quantity(s)</th>
+            </tr>
+            <tr>
+                <td>Shirt</td>
+                <td><input type="number" id="dry1" min="0" max="10" value="0" disabled> Piece(s)</td>
+            </tr>
+            <tr>
+                <td>Pants</td>
+                <td><input type="number" id="dry2" min="0" max="10" value="0" disabled> Piece(s)</td>
+            </tr>
+            <tr>
+                <td>Dress</td>
+                <td><input type="number" id="dry3" min="0" max="10" value="0" disabled> Piece(s)</td>
+            </tr>
+            <tr>
+                <td>Jacket</td>
+                <td><input type="number" id="dry4" min="0" max="10" value="0" disabled> Piece(s)</td>
+            </tr>
+            <tr>
+                <td>Tie</td>
+                <td><input type="number" id="dry5" min="0" max="10" value="0" disabled> Piece(s)</td>
+            </tr>
+            <tr>
+                <td>Shorts</td>
+                <td><input type="number" id="dry6" min="0" max="10" value="0" disabled> Piece(s)</td>
+            </tr>
+            <tr>
+                <td>Down Coat</td>
+                <td><input type="number" id="dry7" min="0" max="10" value="0" disabled> Piece(s)</td>
+            </tr>
+        </table><br> 
+        <button type="submit" class="btn btn-primary">Add to Cart</button>
+            
+        
+    </form>
+    
+     <footer>Copyright &copy; 2020</footer>
+
+
+
+
+
+     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+             integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+             integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<script>
+    $('#washFold').click(function(){
+    //If the checkbox is checked.
+    if($(this).is(':checked')){
+    //Enable the wash&fold option .
+        $('#wash1').attr("disabled", false);
+        $('#wash2').attr("disabled", false);
+        } 
+    else
+    {
+        //If it is not checked, disable the wash&fold option.
+        $('#wash1').attr("disabled", true);
+        $('#wash2').attr("disabled", true);
+    }
+    });
+    </script>
+<script>
+    var checkboxes = $("#dryCleaning");
+
+checkboxes.on('click',checkStatus);
+
+function checkStatus() {
+  if($(checkboxes).is(':checked'))
+  {
+      $("#dry1").prop('disabled', false);
+      $("#dry2").prop('disabled', false);
+      $("#dry3").prop('disabled', false);
+      $("#dry4").prop('disabled', false);
+      $("#dry5").prop('disabled', false);
+      $("#dry6").prop('disabled', false);
+      $("#dry7").prop('disabled', false);
+  }
+  else{
+      $("#dry1").prop('disabled', true);
+      $("#dry2").prop('disabled', true);
+      $("#dry3").prop('disabled', true);
+      $("#dry4").prop('disabled', true);
+      $("#dry5").prop('disabled', true);
+      $("#dry6").prop('disabled', true);
+      $("#dry7").prop('disabled', true);
+  }        
+}
+</script>
+
+</body>
+</html>
