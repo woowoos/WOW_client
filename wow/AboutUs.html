@@ -2,13 +2,15 @@
 <html>
 <head>
      <meta charset="utf-8">
-     <title>Locations</title>
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <title>AboutUs</title>
      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
      <link rel="stylesheet" href="wow.css">
      <link href="https://fonts.googleapis.com/css?family=Maven+Pro|Poiret+One|Raleway|Roboto" rel="stylesheet">
-	<link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
+     <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
+     <link rel="stylesheet" href="aboutus.css">
 </head>
 
 <body>
@@ -21,79 +23,102 @@
      <div id="navigation">
           <ul class="nav justify-content-center">
                <li class="nav-item">
-                    <a class="nav-link active" href="about.html">About Us</a>
+                    <a class="nav-link active" href="index.html">Home</a>
                </li>
                <li class="nav-item">
-                    <a class="nav-link" href="locations.html">Locations</a>
+                    <a class="nav-link" href="AboutUs.html">About Us</a>
                </li>
                <li class="nav-item">
-                    <a class="nav-link" href="menu.html">Menu</a>
+                    <a class="nav-link" href="contact.html">Contact Us</a>
                </li>
                <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
-               </li>
-               <li class="nav-item">
-                    <a class="nav-link" href="merch.html">Merchandise</a>
+                  <a class="nav-link" href="Login.html">Login</a>
                </li>
           </ul>
      </div>
-
-     <div class="jumbotron">
-          <h1 class="display-4">Our Locations</h1>
-     </div>
-
-     <div>
-          <form id="location-search" action="/action_page.php" method="get">
-               <input class="search-bar" type="text" placeholder="Enter your zip code" />
-               <button type="submit"><i class="fa fa-search"></i></button>
-          </form>
-     </div>
-
-     <div class="locations-div">
-          <img src="images/location-map.jpg" alt="map" />
-          <table class="location-table">
-               <tr>
-                    <th>
-                         State
-                    </th>
-                    <th>
-                         Address
-                    </th>
-               </tr>
-               <tr>
-                    <td>California</td>
-                    <td>
-                         197 Seasame St. <br />
-                         Diamond Bar, CA 98742
-                    </td>
-               </tr>
-               <tr>
-                    <td>New York</td>
-                    <td>
-                        55 Lexington Ave.<br />
-                         New York, NY 10010
-                    </td>
-               </tr>
-               <tr>
-                    <td>Texas</td>
-                    <td>
-                         1566 Main St. <br />
-                         Texas, TX<br> 75457
-                    </td>
-               </tr>
-          </table>
-     </div>
-
-     <footer>Copyright &copy; 2019</footer>
-
-
-
-
-
-     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-             integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-             integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+     <div class="about-section">
+          <img class="rack" src="images/aboutus.jpg" alt="Rack Image" align="left"> 
+           <h1 class="Heading"> ABOUT US</h1>
+           <img class="quotation" src="images/quotation.png" alt="quotation mark">
+           <p style="color:#4d4d4d; letter-spacing: 1px; font-family: Futura;">WashOnWheelsNYC is an on demand laundry service that offers same day contactless collection and delivery. Customers can schedule suitable time slots via our website or mobile app and the whole process only takes up to a few minutes. We partner with local laundromats in order to provide quick and convenient service while supporting the local communities. At WashOnWheelsNYC your health is of the utmost importance especially in today's environment. Our service provides a quick and easy solution to a time consuming and tedious process while eliminating the risk of infection.</p>
+            <img class="quotation2" src="images/quotation2.png" alt="end quotation mark">
+         </div>
+         
+         
+         <h2 style="text-align:center; font-family: Lulo; color:#4d4d4d">TEAM</h2>
+         <div class="row">
+           <div class="column">
+             <div class="card">
+               <img class="img" src="images/sumi.jpg" alt="Sumi Sherpa Image" style="width:100%">
+               <div class="container">
+                 <h2 class="name" >Sumi Sherpa</h2>
+                 <p class="title">Project Manager</p>
+                 <p class="description" >I am a senior undergrad student at Zicklin, Baruch College currently majoring in Computer Information Systems. I have gained a decent knowledge in HTML, CSS, JavaScript, PHP, Python, React, and SQL.</p>
+         
+           <a href="https://www.linkedin.com/in/sumi-sherpa-768563161/" target="_blank">
+                     <p><button class="button">Linkedin</button></p>
+                 </a>
+                 
+               </div>
+             </div>
+           </div>
+         
+           <div class="column">
+             <div class="card">
+               <img class="img" src="images/labiba.jpg" alt="Labiba" style="width:100%">
+               <div class="container">
+                 <h2 class="name">Labiba M Haque</h2>
+                 <p class="title">Product Manager</p>
+                 <p class="description">I am currently studying Computer Information Systems in CUNY Baruch College with an expected graduation December 2020. I am simultaneously working as a product manager for WashonWheelsnyc with team Vision.  </p>
+                
+         
+               <a href="https://www.linkedin.com/in/labiba-haque-912781152/" target="_blank">
+                     <p><button class="button">Linkedin</button></p>
+                 </a>
+         
+               </div>
+             </div>
+           </div>
+           
+           <div class="column">
+             <div class="card">
+               <img class="img" src="images/donald.jpg" alt="Donald" style="width:100%">
+               <div class="container">
+                 <h2 class="name">Donald Nicius</h2>
+                 <p class="title">Technology Architect and Backend Developer</p>
+                 <p class="description">Requirements gathering/analysis, allocation and direction of resources, system design, implementation & integration, software and firmware programming, product development, applications development</p>
+                 
+                 <p><button class="button">Linkedin</button></p>
+               </div>
+             </div>
+           </div>
+         
+           <div class="column">
+             <div class="card">
+               <img class="img" src="images/jae.jpg" alt="Jae" style="width:100%">
+               <div class="container">
+                 <h2 class="name">Jae Woo Choi</h2>
+                 <p class="title">Front-end Developer</p>
+                 <p class="description">I am a senior at Baruch College majoring Computer Information Systems in General track and minoring Graphic communication. I am proficient in Python, C++, HTML and CSS which will be simultaneously for UI/US part of this project.</p>
+                
+                 <p><button class="button">Linkedin</button></p>
+               </div>
+             </div>
+           </div>
+         
+         <div class="column">
+             <div class="card">
+               <img class="img" src="images/jon.jpg" alt="Jonathan" style="width:100%">
+               <div class="container">
+                 <h2 class="name">Jonathan Wong</h2>
+                 <p class="title">DevOps Engineer and QA</p>
+                 <p class="description">Hi, I am currently a senior in Baruch majoring in Computer Information Systems and minoring Psychology. I have experience coding in Python, C++, and Java. In my free time i enjoy reading and working out.</p>
+                 <p><button class="button">Linkedin</button></p>
+               </div>
+             </div>
+           </div>
+         
+         </div>
+         <footer>Copyright &copy; 2020</footer>
 </body>
 </html>
