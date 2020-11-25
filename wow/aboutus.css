@@ -1,0 +1,189 @@
+@font-face{
+src: url(fonts/Lulo.ttf);
+font-family: Lulo;
+}
+
+
+.Heading{
+  color:#4d4d4d; 
+  text-align: 
+  center; 
+  padding-top: 100px;
+  font-family: Lulo;
+}
+
+.quotation{
+  
+  position: relative;
+  width:110px;
+}
+
+.quotation2{
+    position: relative;
+  width:110px;
+  left: 150px;
+
+ 
+}
+
+body {
+  font-family:futura,sans;
+  font-size:20px;
+  line-height:1.5;
+  margin: 0;
+  
+
+}
+
+
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+/*TOP NAV BAR */
+
+/* Add a black background color to the top navigation */
+.navbar ul {
+  background-color: #1E90FF;
+  font-family: Verdana,sans;
+  overflow: hidden;
+ margin:0;
+ padding:0;
+ list-style: none;
+ text-align: center;
+}
+
+.navbar li{
+  display: inline-block;
+}
+
+.navbar a{
+  text-decoration: none;
+  color:#fff;
+  width:100px;
+  display: block;
+  padding:25px 20px;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+}
+
+.navbar a:hover{
+  background: #6e6d6d;
+
+}
+
+/*End */
+
+.column {
+  float: left;
+  width: 20%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  margin: 8px;
+}
+
+.img{
+  position: relative;
+  border-radius: 50%;
+}
+
+.rack {
+  float: left;
+position: relative;
+display: block;
+margin-right: 20px;
+  width:700px;
+  height:700px;
+}
+
+.about-section {
+  float: left;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-right: 10px
+  margin-right: 10px;
+  text-align: left;
+  background-color: #f0f0f0 
+;
+  color:  #f0f0f0;
+}
+
+
+
+.container {
+  float: left;
+  width: 100%
+  padding: 10px 16px;
+  clear: both;
+  display: table;
+  }
+
+
+
+
+.title {
+  color: dodgerblue;
+}
+
+@font-family{
+  src:url(fonts/futura light bt.ttf);
+  font-family: futura light bt;
+}
+.description{
+  font-family: futura light bt;
+  font-size: 18px;
+  color: #4d4d4d;
+}
+
+.name{
+font-family: Futura;
+color: #4d4d4d;
+font-size: 25px
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #1E90FF ;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+.footer{
+background-color:#1E90FF;
+position: relative;
+height: 100px;
+margin-top: -100px; 
+clear:both;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+@media screen and (max-width: 1200px min-width:500px ) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+
+}
