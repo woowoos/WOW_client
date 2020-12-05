@@ -2,7 +2,7 @@
 /* CSS Document */
 * { box-sizing: border-box; }
 body{
-     background-color:white;
+   background-color:white;
 	 color:dodgerblue;
 	 text-align: center;
 }
@@ -13,11 +13,11 @@ body{
 nav{
 	background-color:white;
 	text-align: center;
-     max-height:200px;
+  max-height:200px;
 }
 
 .jumbotron {
-	 background-color:dodgerblue;
+     background-color:dodgerblue;
      color: white;
      margin:2em;
 }
@@ -26,7 +26,7 @@ nav{
      border: none;
      text-align:center;
      font-weight:bold;
-	 font-family: 'Maven Pro', sans-serif;
+	font-family: 'Maven Pro', sans-serif;
 }
 
 /*home css*/
@@ -63,18 +63,18 @@ footer {
 
 /*about css*/
 td{
-     padding:1em;
+     /* padding:1em; */
 }
 .how-img{
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 174%;
+  width: 172%;
 }
 .about-content {
 	font-size: 3em;
 	text-align: center;
-    font-family: 'Roboto';
+  font-family: 'Roboto';
 }
 
 .search-container input {
@@ -96,6 +96,207 @@ td{
 .search-container button:hover {
   background: purple;
   color:white;
+}
+
+/* Checkout css */
+* {
+
+     box-sizing: border-box;
+   
+   }
+   
+    
+   
+   .row {
+   
+     display: -ms-flexbox; /* IE10 */
+   
+     display: flex;
+   
+     -ms-flex-wrap: wrap; /* IE10 */
+   
+     flex-wrap: wrap;
+   
+     margin: 0 -16px;
+   
+   }
+   
+    
+   
+   .col-25 {
+   
+     -ms-flex: 25%; /* IE10 */
+   
+     flex: 25%;
+   
+   }
+   
+    
+   
+   .col-50 {
+   
+     -ms-flex: 50%; /* IE10 */
+   
+     flex: 50%;
+   
+   }
+   
+    
+   
+   .col-75 {
+   
+     -ms-flex: 75%; /* IE10 */
+   
+     flex: 75%;
+   
+   }
+   
+    
+   
+   .col-25,
+   
+   .col-50,
+   
+   .col-75 {
+   
+     padding: 0 16px;
+   
+   }
+   
+    
+   
+   .container {
+   
+     background-color: #f2f2f2;
+   
+     padding: 5px 20px 15px 20px;
+   
+     border: 1px solid lightgrey;
+   
+     border-radius: 3px;
+   
+   }
+   
+    
+   
+   input[type=text] {
+   
+     width: 100%;
+   
+     margin-bottom: 20px;
+   
+     padding: 12px;
+   
+     border: 1px solid #ccc;
+   
+     border-radius: 3px;
+   
+   }
+   
+    
+   
+   label {
+   
+     margin-bottom: 10px;
+   
+     display: block;
+   
+   }
+   
+    
+   
+   .icon-container {
+   
+     margin-bottom: 20px;
+   
+     padding: 7px 0;
+   
+     font-size: 24px;
+   
+   }
+   
+    
+   
+   /* .btn {
+   
+     background-color: #4CAF50;
+   
+     color: white;
+   
+     padding: 12px;
+   
+     margin: 10px 0;
+   
+     border: none;
+   
+     width: 100%;
+   
+     border-radius: 3px;
+   
+     cursor: pointer;
+   
+     font-size: 17px;
+   
+   } */
+   
+    
+   
+   /* .btn:hover {
+   
+     background-color: #45a049;
+   
+   } */
+   
+    
+   
+   a {
+   
+     color: #2196F3;
+   
+   }
+   
+    
+   
+   hr {
+   
+     border: 1px solid lightgrey;
+   
+   }
+   
+    
+   
+   span.price {
+   
+     float: right;
+   
+     color: blue;
+   
+   }
+   
+    
+   
+   /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
+   
+   @media (max-width: 800px) {
+   
+     .row {
+   
+       flex-direction: column-reverse;
+   
+     }
+   
+     .col-25 {
+   
+       margin-bottom: 20px;
+   
+     }
+   
+   }
+/* cart css */
+#cart {
+    text-align: left;
+    padding: 20px 500px 0px;
+    color:steelblue;
 }
 /* sign in css */
 #signIn {
@@ -121,7 +322,7 @@ td{
 
 #contact-table td{
      text-align:left;
-     vertical-align:middle;
+     vertical-align:center;
      font-family: 'Roboto';
     
 }
@@ -176,7 +377,7 @@ input[type='checkbox']{
 }
 /*confirmation scc */
 #confirm{
-    text-align: left;
+    text-align: center;
     padding: 70px 500px 30px;
     color:steelblue;
 }
@@ -271,7 +472,7 @@ input[type='checkbox']{
 	}
 	table tr td .about-content{
 		float: left;
-	}
+  }
 	.about-heading{
 		font-size:1.5em;
 	}
